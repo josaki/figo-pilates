@@ -1,0 +1,12 @@
+/* ##############################################################################
+
+    INSTA CUSTOM
+
+############################################################################## */
+  .scrollarea .thumbnail-wrapper {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .scrollarea .thumbnail-wrapper .thumbnail .thumbnail-image {
+    border: 1px solid #d5d4cd;
+  }

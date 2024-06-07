@@ -1,0 +1,361 @@
+/* ##############################################################################
+
+    GNAV - 01
+
+############################################################################## */
+
+/* order
+*************************************************** */
+  .gnav--logo          { order: 1; }
+  .gnav_list-page      { order: 2; }
+  .gnav_list-comp      { order: 3; }
+  .gnav .sub_list      { order: 4; }
+  .gnav .sns_area      { order: 5; }
+  .gnav .tel_area      { order: 6; }
+  .gnav .bnr_list { order: 7; }
+
+
+/* grid
+*************************************************** */
+  .gnav--cont {
+    display: grid;
+    grid-template-areas:
+      'btn'
+      'logo'
+      'page'
+      'comp'
+      'sub'
+      'sns';
+    grid-template-columns: none;
+    grid-template-rows: repeat(6,max-content);
+  }
+  .gnav_list-page { grid-area: page; }
+  .gnav_list-comp { grid-area: comp; }
+  .gnav .sub_list { grid-area: sub; }
+  .gnav .sns_area { grid-area: sns; }
+  .gnav .tel_area { grid-area: tel; }
+  .gnav .bnr_list { grid-area: btn; }
+  .gnav--logo { display: none; }
+
+/* common
+*************************************************** */
+  .gnav--in {
+    height: 100%;
+    width: 50%;
+    margin-left: auto;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+  }
+  .gnav--cont {
+    width: 100%;
+    overflow-y: scroll;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    padding-top: 64px;
+    padding-bottom: 40px;
+    padding-left: 6vw;
+    padding-right: 6vw;
+  }
+  .gnav.pdg-head_btn .gnav--cont {
+    padding-bottom: 148px;
+  }
+  .gnav--cont > * {
+    width: 100%;
+  }
+  @media screen and (max-width: 1480px) {
+    .gnav--in {
+      width: 75%;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .gnav--in {
+      -webkit-justify-content: start;
+      -ms-flex-pack: start;
+      justify-content: start;
+    }
+  }
+  @media screen and (max-width: 640px) {
+    .gnav--cont {
+      grid-template-areas:
+        'btn'
+        'logo'
+        'page'
+        'comp'
+        'tel'
+        'sub'
+        'sns';
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .gnav {
+      height: 100%;
+    }
+    .gnav.pdg-head_btn .gnav--cont {
+      padding-bottom: 40px;
+    }
+    .gnav--in {
+      width: calc(100% - 24px);
+    }
+    .gnav--cont {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+  }
+  @media (max-width: 560px) {
+    .gnav--cont {
+      padding-top: 52px;
+    }
+  }
+  @media screen and (max-width: 413px) {
+    .gnav--cont {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+  }
+
+/* gnav_layer
+*************************************************** */
+  .gnav_layer .bg_img {
+    width: 50%;
+    background-image: url(../images/common/gnav_img.jpg);
+  }
+  .gnav_layer .bg_img::before {
+    background-image: url(../images/mov_texture.png);
+    background-size: 3px;
+    opacity: .5;
+  }
+  @media screen and (max-width: 1480px) {
+    .gnav_layer .bg_img {
+      width: 25%;
+    }
+  }
+  @media screen and (max-width: 560px) {
+    .gnav_layer .bg_img {
+      display: none;
+    }
+  }
+
+/* gnav--logo
+*************************************************** */
+  .gnav--cont .gnav--logo {
+    display: none;
+  }
+
+/* gnav_list
+*************************************************** */
+  .gnav_list {
+    row-gap: 32px;
+  }
+  .gnav_list--item .ico-arrow {
+    display: none;
+  }
+  .gnav_list--item .gnav_list--item_in .label {
+    row-gap: 8px;
+  }
+
+  /* --- page ---  */
+  .gnav_list-page {
+    margin-bottom: 48px;
+  }
+  .gnav_list-page .gnav_list--item_in .txt:nth-of-type(1) {
+    font-size: 173%;
+  }
+  .gnav_list-page .gnav_list--item_in .txt:nth-of-type(2) {
+    font-size: 80%;
+    opacity: .65;
+  }
+
+  /* --- comp ---  */
+  @media (min-width: 641px) {
+    .gnav_list-comp {
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      column-gap: 32px;
+      margin-bottom: 32px;
+    }
+    .gnav_list-comp .gnav_list--item_in {
+      font-size: 116%;
+    }
+    .gnav_list-comp .gnav_list--item_in .txt.fnt-en {
+      display: none;
+    }
+    .gnav_list-comp .snav_list {
+      display: none;
+    }
+  }
+  @media (max-width: 640px) {
+    .gnav_list-page {
+      margin-bottom: 32px;
+    }
+    .gnav_list-comp {
+      margin-bottom: 48px;
+    }
+    .gnav_list-comp .gnav_list--item_in .txt:nth-of-type(1) {
+      font-size: 173%;
+    }
+    .gnav_list-comp .gnav_list--item_in .txt:nth-of-type(2) {
+      font-size: 80%;
+      opacity: .65;
+    }
+  }
+  @media screen and (max-width: 560px) {
+    .gnav_list {
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+    }
+    .gnav_list-comp {
+      margin-bottom: 32px;
+    }
+    .gnav_list--item {
+      width: 50%;
+    }
+    .gnav_list--item .gnav_list--item_in .label {
+      row-gap: 10px;
+    }
+    .gnav_list-page .gnav_list--item_in .txt:nth-of-type(1),
+    .gnav_list-comp .gnav_list--item_in .txt:nth-of-type(1) {
+      font-size: 114%;
+    }
+    .gnav_list-page .gnav_list--item_in .txt:nth-of-type(2),
+    .gnav_list-comp .gnav_list--item_in .txt:nth-of-type(2) {
+      font-size: 79%;
+    }
+  }
+
+/* snav_list
+*************************************************** */
+  .snav_list {
+    margin-top: 16px;
+    row-gap: 8px;
+    padding-left: 16px;
+  }
+  .snav_list--item_in .ttl {
+    column-gap: 8px;
+  }
+  @media screen and (max-width: 560px) {
+    .snav_list {
+      margin-top: 12px;
+      row-gap: 6px;
+      padding-left: 12px;
+    }
+  }
+
+/* sub_list
+*************************************************** */
+  .gnav .sub_list {
+    column-gap: 24px;
+    margin-bottom: 40px;
+  }
+  @media screen and (max-width: 560px) {
+    .gnav .sub_list {
+      column-gap: 12px;
+      margin-bottom: 24px;
+    }
+    .gnav .sub_list--item {
+      font-size: 88%;
+    }
+  }
+
+/* sns_list
+*************************************************** */
+  .gnav .sns_area {
+    column-gap: 16px;
+  }
+  .gnav .sns_list {
+    column-gap: 8px;
+  }
+
+/* tel_area
+*************************************************** */
+  .tel_area {
+    margin-top: 48px;
+  }
+  .tel_area .tel {
+    column-gap: 16px;
+    row-gap: 8px;
+  }
+  .tel_area a {
+    column-gap: 12px;
+    font-size: 240%;
+    line-height: 1em;
+  }
+  .tel_area .open_close {
+    font-size: 86%;
+    opacity: .8;
+  }
+  @media screen and (max-width: 768px) {
+    .tel_area a {
+      column-gap: 8px;
+      font-size: 180%;
+    }
+    .tel_area a svg {
+      width: 26px;
+      height: 26px;
+    }
+  }
+  @media (max-width: 640px) {
+    .tel_area {
+      margin-top: 8px;
+      margin-bottom: 16px;
+    }
+  }
+
+/* bnr_list
+*************************************************** */
+  .gnav .bnr_list {
+    margin-left: -6vw;
+    width: calc(100% + 12vw);
+    height: 180px;
+    margin-bottom: 40px;
+  }
+  .gnav .bnr_list--item hgroup {
+    margin-bottom: 0;
+  }
+  .gnav .bnr_list--item .txt_area > p {
+    display: none;
+  }
+  @media screen and (max-width: 600px) {
+    .gnav .bnr_list {
+      height: 240px;
+      width: calc(100% + 64px);
+      margin-left: -32px;
+      position: static;
+      margin-bottom: 40px;
+    }
+  }
+  @media screen and (max-width: 413px) {
+    .gnav .bnr_list {
+      width: calc(100% + 48px);
+      margin-left: -24px;
+    }
+  }
+
+
+/* ##############################################################################
+
+    TAP TRUE
+
+############################################################################## */
+  @media screen and (min-width: 769px) {
+    .header.slide_true .snav_list--item-parent {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .header.slide_true .gnav_list-comp .gnav_list--item.has_sub .gnav_list--item_in {
+      padding-right: 0;
+    }
+    .header.slide_true .gnav_list-comp .gnav_list--item.has_sub .gnav_list--item_in .ico-arrow {
+      display: none;
+    }
+  }
