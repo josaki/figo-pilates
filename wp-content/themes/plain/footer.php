@@ -57,17 +57,25 @@
         <img src="<?php echo get_template_directory_uri(); ?>/images/common/logo_blk-ver.svg" alt="<?php echo wp_title(); ?>" width="160" height="138" loading="lazy">
         <span class="w-m lh-10"><?php echo C_NAME; ?></span>
       </h3>
-      <div class="sns_area flx flx-end-ctr">
-        <h4 class="fnt-en ls-300">Follow us</h4>
-        <ul class="sns_list flx flx-ctr">
-          <?php foreach ($sns_list as $sns_k => $sns_url): ?>
-            <li class="sns_list--item">
-              <a href="<?php echo $sns_url; ?>" target="_blank" rel="nofollow" class="flx flx-ctr">
-                <svg viewBox="<?php echo VB_SNS_ICO; ?>" class="clr-def hov-clr-<?php echo $sns_k; ?> op50 hov-op100 ts" width="24" height="24"><use xlink:href="#ico-<?php echo $sns_k; ?>"></use></svg>
-              </a>
-            </li>
-          <?php endforeach ?>
-        </ul>
+      <div class="line__sns flx flx-btw-end flx-smpc-blc flx-1">
+        <div class="line_btn">
+          <a href="<?php echo LINE_URL; ?>" target="_blank" rel="nofollow" class="por poa-bf bg_clr-line-bf op10-bf ts ts-bf clr-line hov-clr-wht flx flx-ctr hov-op100-bf hov_area">
+            <svg viewBox="<?php echo VB_ICO; ?>" class="clr-line hov-clr-wht ts" width="28" height="28"><use xlink:href="#ico-line"></use></svg>
+            <span class="txt fnt-xxs lh-14 w-m">LINE友だち追加で<br>予約・お問い合わせ</span>
+          </a>
+        </div>
+        <div class="sns_area flx flx-end-ctr">
+          <h4 class="fnt-en ls-300">Follow us</h4>
+          <ul class="sns_list flx flx-ctr">
+            <?php foreach ($sns_list as $sns_k => $sns_url): ?>
+              <li class="sns_list--item">
+                <a href="<?php echo $sns_url; ?>" target="_blank" rel="nofollow" class="flx flx-ctr">
+                  <svg viewBox="<?php echo VB_SNS_ICO; ?>" class="clr-def hov-clr-<?php echo $sns_k; ?> op50 hov-op100 ts" width="24" height="24"><use xlink:href="#ico-<?php echo $sns_k; ?>"></use></svg>
+                </a>
+              </li>
+            <?php endforeach ?>
+          </ul>
+        </div>
       </div>
     </div>
   </nav>

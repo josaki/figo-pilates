@@ -49,7 +49,7 @@ if( is_archive() || is_tax() || is_single() ): ?>
 <?php
 /* sticky
 *************************************************** */
-if( is_home() || is_front_page() || is_archive() || is_tax() || is_single() || is_page('faq') ): ?>
+if( is_home() || is_front_page() || is_archive() || is_tax() || is_single() || is_page(array('faq','studio')) ): ?>
   <script src="<?php echo get_template_directory_uri(); ?>/js/plugin/sticky-sidebar.min.js" defer></script>
   <script src="<?php echo get_template_directory_uri(); ?>/js/plugin/ResizeSensor.js" defer></script>
   <script src="<?php echo get_template_directory_uri(); ?><?php latest_cache('/js/sticky_sidebar.js'); ?>" defer></script>

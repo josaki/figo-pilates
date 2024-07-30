@@ -15,15 +15,13 @@
 </script>
 <meta name="format-detection" content="telephone=no">
 <title><?php wp_title(); ?></title>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXX-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-XXXXXXX-1');
-</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PR3HXPFV');</script>
+<!-- End Google Tag Manager -->
 
 <?php wp_head(); ?>
 <?php include(TEMPLATEPATH . '/parts/common.php'); ?>
@@ -56,6 +54,11 @@
 </head>
 
 <body class="<?php echo $body_class; ?> clr-def bg_clr-body" id="top">
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PR3HXPFV"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
 <?php include(TEMPLATEPATH . '/parts/svgs.php'); ?>
 

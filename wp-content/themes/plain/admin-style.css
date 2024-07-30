@@ -1,9 +1,9 @@
 /* ログイン画面 */
-.login { background: #f1f1f1; }
+.login { background: #f2f1ec; }
 #login h1 a {
-  background: url("./images/common/logo-hor.svg") no-repeat center center !important;
+  background: url("./images/common/logo_blk-ver.svg") no-repeat center center !important;
   width: 100% !important;
-  height: 48px;
+  height: 160px;
   background-size: auto;
 }
 
@@ -40,8 +40,8 @@
     border: 1px solid #393e42;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(./images/common/logo-ver.svg);
-    background-size: 52%;
+    background-image: url(./images/common/logo_blk-ver.svg);
+    background-size: 70%;
     border-radius: 100%;
     margin-bottom: 8px;
   }

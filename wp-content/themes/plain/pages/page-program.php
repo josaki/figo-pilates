@@ -30,6 +30,11 @@
           'desc' => 'ストレッチ種目を中心に体の柔軟性を高め、自律神経の安定などを目的とするクラスです',
           'url' => 'https://coubic.com/figo4/3536262#pageContent',
         ),
+        'back_arm' => array(
+          'label' => 'Back&Arm',
+          'desc' => '背中と腕のエクササイズを中心に働きかけるクラスです。肩こりの解消などにも効果的です。',
+          'url' => 'https://coubic.com/figo4/4154621#pageContent',
+        ),
       );
       ?>
       <ul class="lesson_list clm clm-3 clm-2-xspc clm-1-sp">
@@ -50,8 +55,8 @@
               'class' => 'btn-sm tbl-ctr', 'hov_area' => false,
               'label' => $lesson_v['label'].'を予約する',
               'href' => $lesson_v['url'], 'target' => '_blank',
-              'txt_clr' => $lesson_k, 'txt_clr-hov' => 'wht',
-              'bg_clr' => $lesson_k,
+              'txt_clr' => 'main', 'txt_clr-hov' => 'wht',
+              'bg_clr' => 'main',
             );
             get_template_part('/parts/btn-def', null, $args);
             ?>

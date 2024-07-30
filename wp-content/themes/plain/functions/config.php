@@ -37,7 +37,8 @@
   /* SNS（あれば記述）
   *************************************************** */
     const SCHEDULE_URL = 'https://coubic.com/figo4/services#pageContent';
-    const LINE_URL = '#'; // LINE URL
+    const RESERVATION_URL = 'https://coubic.com/figo4/products/418350#pageContent';
+    const LINE_URL = 'https://lin.ee/0EvxJqU'; // LINE URL
     const INSTA_URL = 'https://www.instagram.com/figopilates/'; // Instagram URL
     const MAP_URL = 'https://maps.app.goo.gl/48MzknJ8mXt4KEdk7';
     const YT_URL = ''; // Youtube URL

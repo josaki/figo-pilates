@@ -11,8 +11,14 @@ if ( $args['target'] ) {
   $target = ' target="_'.$args['target'].'" rel="nofollow"';
 }
 ?>
-<div class="btn btn-def hov_area fade_in <?php echo $args['class']; ?>">
-  <<?php echo $stt_tag; ?> class="btn--in ofh flx flx-ctr por clr-<?php echo $args['txt_clr']; ?> hov-clr-<?php echo $args['txt_clr-hov']; ?>"<?php echo $target; ?>>
+<div class="btn btn-def hov_area fade_in por <?php echo $args['class']; ?>">
+  <?php if ( $args['href'] == RESERVATION_URL ): ?>
+    <div class="suggest_badge bg_clr-sub2 clr-wht flx flx-ctr flx-col w-m fnt-xxs bdr_clr-body">
+      <div class="fukidashi flx flx-ctr"><span class="bg_clr-wht"></span><span class="bg_clr-wht"></span><span class="bg_clr-wht"></span></div>
+      <p>おすすめ</p>
+    </div>
+  <?php endif ?>
+  <<?php echo $stt_tag; ?> class="btn--in ofh smooth flx flx-ctr por clr-<?php echo $args['txt_clr']; ?> hov-clr-<?php echo $args['txt_clr-hov']; ?>"<?php echo $target; ?>>
     <span class="txt w-m ts flx flx-ctr fnt-en">
       <?php if ( $args['ico'] ): ?>
         <svg viewBox="<?php echo VB_ICO; ?>" class="clr-<?php echo $args['txt_clr']; ?> hov-clr-<?php echo $args['txt_clr-hov']; ?> ts" width="18" height="18"><use xlink:href="#ico-<?php echo $args['ico']; ?>"></use></svg>
