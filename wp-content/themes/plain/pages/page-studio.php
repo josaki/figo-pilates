@@ -90,6 +90,7 @@
                 $args = array(
                   'class' => 'tbl-lft', 'hov_area' => false,
                   'label' => 'GOOGLE MAP',
+                  'ico' => false,
                   'href' => MAP_URL, 'target' => '_blank',
                   'txt_clr' => 'main', 'txt_clr-hov' => 'wht',
                   'bg_clr' => 'main',

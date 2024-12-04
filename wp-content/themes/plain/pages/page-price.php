@@ -173,6 +173,7 @@
           $args = array(
             'class' => 'tbl-ctr anm_del400', 'hov_area' => false,
             'label' => '料金詳細はこちら',
+            'ico' => false,
             'href' => get_template_directory_uri().'/images/price/set_price-20240716.pdf', 'target' => '_blank',
             'txt_clr' => 'main', 'txt_clr-hov' => 'wht',
             'bg_clr' => 'main',
@@ -283,6 +284,7 @@
       $args = array(
         'class' => 'tbl-ctr anm_del400', 'hov_area' => false,
         'label' => '初回無料体験はこちら',
+        'ico' => false,
         'href' => home_url().'/trial', 'target' => '',
         'txt_clr' => 'main', 'txt_clr-hov' => 'wht',
         'bg_clr' => 'main',

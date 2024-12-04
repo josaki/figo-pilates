@@ -224,6 +224,44 @@
 
   <?php include(TEMPLATEPATH . '/parts/sect-schedule.php'); ?>
 
+  <!-- start mv -->
+  <section class="mv" id="mv" data-trigger>
+    <div class="inner por btm80">
+      <div class="img_area flx flx-ctr flx-col">
+        <picture class="mv_img fade_in-top">
+          <source srcset="<?php echo get_template_directory_uri(); ?>/images/mv_img.webp 1x, <?php echo get_template_directory_uri(); ?>/images/mv_img@2x.webp 2x" type="image/jpeg">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/mv_img.webp" alt="MISSION VALUE" width="1009" height="960" loading="lazy">
+        </picture>
+      </div>
+      <div class="mv_txts flx flx-col">
+        <div class="mv_txt mv_txt-mission flx flx-col flx-ctr-stt fade_in-rgt anm_del100">
+          <h4 class="sub_ttl por fnt-en clr-wht"><span class="txt">MISSION</span><span class="line"></span></h4>
+          <h3 class="ttl clr-main">全ての人の健康と<br>ウェルビーイングの向上</h3>
+          <p class="txt">を店舗の使命・存在意義と考え、<br>各スタッフは「熱意」「誠意」「多様性」を持って<br>お客様へサービスを提供致します。</p>
+        </div>
+        <div class="mv_txt mv_txt-vision flx flx-col fade_in-rgt anm_del300">
+          <h4 class="sub_ttl por fnt-en clr-wht"><span class="txt">VISION</span><span class="line"></span></h4>
+          <h3 class="ttl clr-main">地域社会の健康に貢献し、<br>通う事が習慣となるクラブ</h3>
+          <p class="txt">が私たちの目指す将来的な理想像です。</p>
+        </div>
+      </div>
+    </div>
+    <div class="mv_msg flx flx-col flx-ctr fade_in-top anm_del600">
+      <ul class="mv_msg_list txt-ctr">
+        <li class="mv_msg_list--item por poa-bf bg_clr-wht-bf">
+          <small>FIGOには、</small><span class="clr-main">いつもあなたを見守る</span><small>スタッフがいます。</small>
+        </li>
+        <li class="mv_msg_list--item por poa-bf bg_clr-wht-bf">
+          <small>FIGOには、</small><span class="clr-main">あなたの変化を一緒に喜ぶ</span><small>スタッフがいます。</small>
+        </li>
+        <li class="mv_msg_list--item por poa-bf bg_clr-wht-bf">
+          <small>FIGOには、</small><span class="clr-main">あなたの目標に共に向き合う</span><small>スタッフがいます。</small>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- end mv -->
+
   <!-- start recruit -->
   <section class="recruit bdr_clr-body_lt por ofh" id="recruit" data-trigger>
     <div class="inner inner-lg sect_pdg-sm flx flx-rev flx-xspc-blc">

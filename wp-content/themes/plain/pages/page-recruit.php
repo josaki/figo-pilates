@@ -115,6 +115,7 @@
                 $args = array(
                   'class' => 'tbl-ctr btn-sm', 'hov_area' => true,
                   'label' => $btn_label,
+                  'ico' => false,
                   'href' => $job_v['btn_url'], 'target' => $btn_target,
                   'txt_clr' => 'main', 'txt_clr-hov' => 'wht',
                   'bg_clr' => 'main',

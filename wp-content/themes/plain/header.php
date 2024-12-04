@@ -219,6 +219,7 @@ if ( GNAV_SUB_SLIDE ) {
                           $args = array(
                             'class' => 'btn-sm', 'hov_area' => false,
                             'label' => 'VIEW MORE',
+                            'ico' => false,
                             'href' => $nav_href, 'target' => '',
                             'txt_clr' => 'def tbl-lft', 'txt_clr-hov' => 'wht',
                             'bg_clr' => 'wht', 'bg_clr-bf' => 'main',
@@ -295,6 +296,7 @@ if ( GNAV_SUB_SLIDE ) {
             $args = array(
               'class' => 'btn-'.$head_btn_k, 'hov_area' => false,
               'label' => $head_btn_v['label-en'],
+              'ico' => false,
               'href' => $head_btn_v['url'], 'target' => '',
               'txt_clr' => 'main', 'txt_clr-hov' => 'wht', 'bg_clr' => 'main',
               'ico' => $head_btn_v['ico'],

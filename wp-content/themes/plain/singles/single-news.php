@@ -24,6 +24,7 @@
       $args = array(
         'class' => 'tbl-ctr anm_del400', 'hov_area' => false,
         'label' => '一覧へ戻る',
+        'ico' => false,
         'href' => home_url().'/'.$detail_info['post_type'].'/', 'target' => '',
         'txt_clr' => 'main', 'txt_clr-hov' => 'wht',
         'bg_clr' => 'main',

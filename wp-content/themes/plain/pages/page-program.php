@@ -54,6 +54,7 @@
             $args = array(
               'class' => 'btn-sm tbl-ctr', 'hov_area' => false,
               'label' => $lesson_v['label'].'を予約する',
+              'ico' => false,
               'href' => $lesson_v['url'], 'target' => '_blank',
               'txt_clr' => 'main', 'txt_clr-hov' => 'wht',
               'bg_clr' => 'main',

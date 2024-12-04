@@ -90,7 +90,7 @@
         <h3 class="ttl fnt-xl tbl-ctr bg_clr-body w-m"><span class="op50">注意事項</span></h3>
         <ul class="check_list btm24 tbl-ctr">
           <li class="check_list--item bdr_clr-body_lt-bf bdr_clr-main-af"><p class="fnt-xl">体験レッスン当日はスポーツウェア、タオルを必ずお持ちください。</p></li>
-          <li class="check_list--item bdr_clr-body_lt-bf bdr_clr-main-af"><p class="fnt-xl">レッスン開始20分前にご来店ください。<br>お着替えや設備説明などを済ませ、開始時間ちょうどからレッスンをスタートします。</p></li>
+          <li class="check_list--item bdr_clr-body_lt-bf bdr_clr-main-af"><p class="fnt-xl">レッスン開始10分前にご来店ください。<br>お着替えや設備説明などを済ませ、開始時間ちょうどからレッスンをスタートします。</p></li>
           <li class="check_list--item bdr_clr-body_lt-bf bdr_clr-main-af"><p class="fnt-xl">レッスン終了後は着替えやレッスン内容、プランのご案内などを行うため、<br class="lgsp-none">レッスン終了後人数によって30分から60分ほどお時間を頂戴しております。</p></li>
           <li class="check_list--item bdr_clr-body_lt-bf bdr_clr-main-af"><p class="fnt-xl">体験レッスンは、実際にご入会を検討されている方のみに受講いただいております。<br>遠方にお住まいの方、入会の意志がない方は、ご遠慮いただけますようお願いいたします。</p></li>
           <li class="check_list--item bdr_clr-body_lt-bf bdr_clr-main-af"><p class="fnt-xl">同業者の方の調査目的での受講、暴力団等反社会的勢力に属されている方の利用は固くお断りします。</p></li>
@@ -99,7 +99,7 @@
           <li class="attn_list--item">上記事項ならびに利用規約に反する事項が発覚した場合は、その場でスタジオのご利用をお断りし、適切な処置を取らせていただきます。</li>
         </ul>
       </div>
-      <div class="btn_list btn_list-rsv flx flx-btw-ctr flx-smpc-blc">
+      <div class="btn_list btn_list-rsv flx flx-btw-ctr flx-smpc-blc btm40">
         <?php
         $args = array(
           'class' => 'btn-reservation badge_show', 'hov_area' => false,
@@ -132,7 +132,11 @@
         get_template_part('/parts/btn-def', null, $args);
         ?>
       </div>
+      <div class="imp_txt tbl-ctr por poa-bf bg_clr-wht bdr_clr-red-bf">
+        <p class="txt-ctr txt-jus-lgsp head5"><strong class="clr-red">体験レッスンはBasicクラスのみ</strong>承っております。<br class="lgsp-none">Basicクラスのスケジュールよりご希望の日時をお選び下さい。</p>
+      </div>
     </div>
+
   </section>
   <!-- end trial -->
 
