@@ -25,15 +25,15 @@
           'desc' => '腹部の引き締めと体幹の強化を目的としたエクササイズ中心に働きかけるクラスです。',
           'url' => 'https://coubic.com/figo4/3745516#pageContent',
         ),
-        'relax_stretch' => array(
-          'label' => 'Relax&Stretch',
-          'desc' => 'ストレッチ種目を中心に体の柔軟性を高め、自律神経の安定などを目的とするクラスです',
-          'url' => 'https://coubic.com/figo4/3536262#pageContent',
-        ),
         'back_arm' => array(
           'label' => 'Back&Arm',
           'desc' => '背中と腕のエクササイズを中心に働きかけるクラスです。肩こりの解消などにも効果的です。',
           'url' => 'https://coubic.com/figo4/4154621#pageContent',
+        ),
+        'relax_stretch' => array(
+          'label' => 'Relax&Stretch',
+          'desc' => 'ストレッチ種目を中心に体の柔軟性を高め、自律神経の安定などを目的とするクラスです',
+          'url' => 'https://coubic.com/figo4/3536262#pageContent',
         ),
       );
       ?>
